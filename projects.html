@@ -72,9 +72,9 @@ padding:40px;
 .project-card{
 background:rgba(0,0,0,0.6);
 padding:15px;
-border-radius:10px;
+border-radius:12px;
 text-align:center;
-transition:0.3s;
+transition:transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card img{
@@ -83,8 +83,10 @@ border-radius:8px;
 }
 
 .project-card:hover{
-transform:scale(1.05);
+transform:translateY(-8px);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
 }
+  
 .modal{
 display:none;
 position:fixed;
