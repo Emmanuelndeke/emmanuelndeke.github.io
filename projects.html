@@ -82,6 +82,33 @@ border-radius:8px;
 .project-card:hover{
 transform:scale(1.05);
 }
+.modal{
+display:none;
+position:fixed;
+z-index:1000;
+padding-top:60px;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background-color:rgba(0,0,0,0.9);
+}
+
+.modal-content{
+margin:auto;
+display:block;
+max-width:90%;
+max-height:90%;
+}
+
+.close{
+position:absolute;
+top:20px;
+right:40px;
+color:white;
+font-size:40px;
+cursor:pointer;
+}
 
 </style>
 
@@ -106,13 +133,13 @@ transform:scale(1.05);
   
 <div class="project-card">  
 <h2>Population Density Mapping</h2>
-<img src="images/Pop-map.png" alt="Population Density Map"> 
+<img src="images/Pop-map.png" alt="Population Density Map" onclick="openModal(this)"> 
 <p>Geospatial visualization of population distribution patterns in Kenya.</p>
 </div>
 
 <div class="project-card">
 <h2>Land Cover Classification</h2>
-<img src="images/landcover-map.png.png" alt="Land Cover Map">
+<img src="images/landcover-map.png.png" alt="Land Cover Map" onclick="openModal(this)">
 <p>
 This project maps land use and land cover patterns in Nairobi using satellite imagery and GIS analysis. 
 It highlights environmental changes and helps in resource management and planning.
@@ -121,13 +148,13 @@ It highlights environmental changes and helps in resource management and plannin
 
 <div class="project-card">
 <h2>Land Surface Temperature</h2>
-<img src="images/landsat-temp-map.png" alt="LST Map">
+<img src="images/landsat-temp-map.png" alt="LST Map" onclick="openModal(this)">
 <p>This project highlights thermal satellite analysis showing temperature variations compared with NDVI across Nairobi.</p>
 </div>
   
 <div class="project-card">
 <h2>Rainfall Mapping</h2>
-<img src="images/Rainfall Map.png" alt="Rainfall Map">
+<img src="images/Rainfall Map.png" alt="Rainfall Map" onclick="openModal(this)">
 <p>
 This project analyzes rainfall distribution using geospatial datasets processed in GIS. 
 The analysis highlights spatial variability in precipitation patterns and helps 
@@ -137,13 +164,31 @@ understand climate variability across the study region.
 
 <div class="project-card">
 <h2>NDVI Vegetation Analysis</h2>
-<img src="images/NDVI-map.png" alt="NDVI Map">
+<img src="images/NDVI-map.png" alt="NDVI Map" onclick="openModal(this)">
 <p>Satellite vegetation analysis in Lake Chad used to understand vegetation health changes around the area.</p>
 </div>
   
 </div>
 
 </section>
+<div id="mapModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+  
+<script>
+function openModal(img){
+var modal = document.getElementById("mapModal");
+var modalImg = document.getElementById("modalImage");
+
+modal.style.display = "block";
+modalImg.src = img.src;
+}
+
+document.querySelector(".close").onclick = function(){
+document.getElementById("mapModal").style.display = "none";
+}
+</script>
 
 </body>
 
