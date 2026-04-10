@@ -59,6 +59,29 @@ width:100%;
 border-radius:10px;
 margin-top:15px;
 }
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:40px;
+}
+
+.project-card{
+background:rgba(0,0,0,0.6);
+padding:15px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.project-card img{
+width:100%;
+border-radius:8px;
+}
+
+.project-card:hover{
+transform:scale(1.05);
+}
 
 </style>
 
@@ -75,34 +98,36 @@ margin-top:15px;
 </ul>
 </nav>
 
-<section>
+<section class="projects">
 
-<h1>GIS Projects</h1>
+<h1>My GIS Projects</h1>
   
-<div class="project">
+<div class="projects-grid">
+  
+<div class="project-card">  
 <h2>Population Density Mapping</h2>
-<img src="images/Pop-map.png" width="100%">  
+<img src="images/Pop-map.png" alt="Population Density Map"> 
 <p>Geospatial visualization of population distribution patterns in Kenya.</p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h2>Land Cover Classification</h2>
-<img src="images/landcover-map.png.png" width="100%">
+<img src="images/landcover-map.png.png" alt="Land Cover Map">
 <p>
 This project maps land use and land cover patterns in Nairobi using satellite imagery and GIS analysis. 
 It highlights environmental changes and helps in resource management and planning.
 </p>
 </div>
 
-<div class="project">
+<div class="project-card">
 <h2>Land Surface Temperature</h2>
-<img src="images/landsat-temp-map.png" width="100%">  
+<img src="images/landsat-temp-map.png" alt="LST Map">
 <p>This project highlights thermal satellite analysis showing temperature variations compared with NDVI across Nairobi.</p>
 </div>
   
-<div class="project">
+<div class="project-card">
 <h2>Rainfall Mapping</h2>
-<img src="images/Rainfall Map.png" width="100%">
+<img src="images/Rainfall Map.png" alt="Rainfall Map">
 <p>
 This project analyzes rainfall distribution using geospatial datasets processed in GIS. 
 The analysis highlights spatial variability in precipitation patterns and helps 
@@ -110,11 +135,13 @@ understand climate variability across the study region.
 </p>  
 </div>
 
-<div class="project">
+<div class="project-card">
 <h2>NDVI Vegetation Analysis</h2>
-<img src="images/NDVI-map.png" width="100%">
+<img src="images/NDVI-map.png" alt="NDVI Map">
 <p>Satellite vegetation analysis in Lake Chad used to understand vegetation health changes around the area.</p>
-</div>  
+</div>
+  
+</div>
 
 </section>
 
