@@ -115,6 +115,30 @@ width:100%;
 border-radius:10px;
 margin-bottom:20px;
 }
+.projects-grid a{
+text-decoration:none;
+color:inherit;
+display:block;
+}
+.project-card{
+height:100%;
+}
+.project-button{
+display:inline-block;
+margin-top:12px;
+padding:8px 16px;
+background:#ff6600;
+color:white;
+border-radius:6px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+.project-button:hover{
+background:#ff8533;
+transform:scale(1.05);
+}
   
 .modal{
 display:none;
@@ -182,44 +206,40 @@ letter-spacing:0.5px;
   
 <div class="projects-grid">
   
-<a href="population.html">
 <div class="project-card">
 <img src="images/Pop-map.png" alt="Population Map">
 <h3>Population Distribution</h3>
 <p>Spatial analysis of population density.</p>
+<a href="population.html" class="project-button">View Project</a>
 </div>
 </a>
   
-<a href="landcover.html">
 <div class="project-card">
 <img src="images/landcover-map.png.png" alt="Land Cover Map">
 <h3>Land Cover Classification</h3>
 <p>Satellite-based land cover mapping.</p>
+<a href="landcover.html" class="project-button">View Project</a>
 </div>
-</a>
 
-<a href="lst.html">
 <div class="project-card">
 <img src="images/landsat-temp-map.png" alt="Land Surface Temperature">
 <h3>Land Surface Temperature</h3>
 <p>Thermal pattern analysis using satellite data.</p>
+<a href="lst.html" class="project-button">View Project</a>
 </div>
-</a>
-  
-<a href="rainfall.html">
+
 <div class="project-card">
 <img src="images/Rainfall Map.png" alt="Rainfall Map">
 <h3>Rainfall Distribution</h3>
 <p>Spatial analysis of rainfall patterns.</p>
+<a href="rainfall.html" class="project-button">View Project</a>
 </div>
-</a>
 
-</div>
-<a href="ndvi.html">
 <div class="project-card">
 <img src="images/NDVI-map.png" alt="NDVI Map">
 <h3>NDVI Vegetation Analysis</h3>
 <p>Vegetation health monitoring using NDVI.</p>
+<a href="ndvi.html" class="project-button">View Project</a>
 </div>
 </a>
 
