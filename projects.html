@@ -70,7 +70,7 @@ padding:40px;
 }
 
 .project-card{
-background:rgba(0,0,0,0.6);
+background:rgba(20,20,20,0.85);
 padding:15px;
 border-radius:12px;
 text-align:center;
@@ -91,6 +91,16 @@ background-image:url("images/project-background.jpg");
 background-size:cover;
 background-position:center;
 background-attachment:fixed;
+}
+.projects-page::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+z-index:-1;
 }
   
 .modal{
