@@ -146,6 +146,28 @@ font-size:14px;
 min-height:70vh;
 align-items:center;
 }
+@media (max-width:768px){
+
+.menu-toggle{
+display:block;
+}
+
+.nav-links{
+display:none;
+flex-direction:column;
+position:absolute;
+top:70px;
+right:20px;
+background:#021018;
+padding:20px;
+border-radius:8px;
+}
+
+.nav-links.show{
+display:flex;
+}
+
+}
 }
 *{
 margin:0;
@@ -183,6 +205,12 @@ font-weight:500;
 
 .site-logo{
 height:45px;
+}
+.menu-toggle{
+display:none;
+font-size:28px;
+cursor:pointer;
+color:white;
 }
 </style>
 </head>
