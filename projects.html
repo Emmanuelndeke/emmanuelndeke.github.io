@@ -188,6 +188,41 @@ font-size:11px;
 font-weight:500;
 letter-spacing:0.5px;
 }
+.site-footer{
+background:#111;
+color:white;
+padding:40px 20px;
+margin-top:60px;
+}
+
+.footer-content{
+max-width:1000px;
+margin:auto;
+text-align:center;
+backdrop-filter: blur(5px);
+}
+
+.footer-links{
+margin-top:15px;
+}
+
+.footer-links a{
+color:#ff6600;
+margin:0 12px;
+text-decoration:none;
+font-weight:500;
+transition:0.3s;
+}
+
+.footer-links a:hover{
+color:#ffa366;
+}
+
+.copyright{
+margin-top:20px;
+font-size:13px;
+color:#bbb;
+}
 
 </style>
 
@@ -267,6 +302,29 @@ document.querySelector(".close").onclick = function(){
 document.getElementById("mapModal").style.display = "none";
 }
 </script>
+  
+<footer>
+<footer class="site-footer">
+
+<div class="footer-content">
+
+<h3>TerraKuwa Kenya</h3>
+
+<p>Environmental storytelling through maps, data and technology.</p>
+
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<p class="copyright">
+© 2026 TerraKuwa Kenya
+</p>
+
+</div>
+
+</footer>
 
 </body>
 
