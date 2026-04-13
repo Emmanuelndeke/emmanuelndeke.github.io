@@ -1,54 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-
-<title>Population Classification</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Population Density Analysis</title>
 
 <link rel="stylesheet" href="style.css">
+<style>
+.project-page{
+max-width:1100px;
+margin:auto;
+padding:60px 20px;
+}
+
+.project-header{
+text-align:center;
+margin-bottom:40px;
+}
+
+.project-header h1{
+font-size:36px;
+}
+
+.project-map{
+text-align:center;
+margin-bottom:40px;
+}
+
+.project-map img{
+width:100%;
+max-width:900px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.project-content{
+background:rgba(0,0,0,0.65);
+padding:35px;
+border-radius:10px;
+line-height:1.7;
+}
+
+.project-content h2{
+margin-top:20px;
+color:#ff6600;
+} 
+</style>
 
 </head>
 
-<body class="projects-page">
+<body>
 
-<a href="projects.html">← Back to Projects</a>
+<section class="project-page">
 
-<section class="project-details">
+<div class="project-header">
+<h1>Population Density of Kenya</h1>
+<p>Spatial analysis of Population Density  using satellite imagery</p>
+</div>
 
-<h1>Population Density Classification</h1>
+<div class="project-map">
+<img src="images/Pop-map.png" alt="Kenya Land Cover Map">
+</div>
 
-<img src="images/Pop-map.png">
+<div class="project-content">
 
-<h2>Study Area</h2>
-
+<h2>Project Overview</h2>
 <p>
-Description of the study area and why the analysis was conducted.
+This project analyzes land cover distribution across Kenya using remote sensing
+classification techniques.
 </p>
-
-<h2>Datasets Used</h2>
-
-<ul>
-<li>Satellite imagery</li>
-<li>Administrative boundaries</li>
-</ul>
-
-<h2>Software Used</h2>
-
-<ul>
-<li>QGIS</li>
-</ul>
 
 <h2>Methodology</h2>
-
 <p>
-Explain the GIS workflow used to produce the map.
+Satellite imagery was processed and classified to identify vegetation,
+water bodies, and built-up areas.
 </p>
 
-<h2>Results</h2>
-
+<h2>Tools Used</h2>
 <p>
-Explain what the map reveals about the spatial patterns.
+ArcGIS Pro and remote sensing spatial analysis.
 </p>
+
+</div>
 
 </section>
 
