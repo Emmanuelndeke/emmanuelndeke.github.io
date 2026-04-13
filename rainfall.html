@@ -52,7 +52,16 @@ grid-template-columns:1fr 1fr;
 gap:40px;
 align-items:center;
 margin-bottom:60px;
+opacity:0;
+transform:translateY(40px);
+transition:all 0.8s ease;
 }
+  
+.story-section.visible{
+opacity:1;
+transform:translateY(0);
+}
+  
 .story-image{
 position:relative;
 }
