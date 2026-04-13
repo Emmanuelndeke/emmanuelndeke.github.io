@@ -7,6 +7,20 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+.nav-links{
+list-style:none;
+display:flex;
+gap:30px;
+}
+
+.nav-links a{
+text-decoration:none;
+color:white;
+}
+
+.menu-toggle{
+display:none;
+}
 
 .contact-container h1{
 text-align:center;
@@ -146,12 +160,10 @@ font-size:14px;
 min-height:70vh;
 align-items:center;
 }
-@media (max-width:768px){
 
 .menu-toggle{
 display:block;
 }
-
 .nav-links{
 display:none;
 flex-direction:column;
@@ -162,13 +174,11 @@ background:#021018;
 padding:20px;
 border-radius:8px;
 }
-
 .nav-links.show{
 display:flex;
 }
+}
 
-}
-}
 *{
 margin:0;
 padding:0;
@@ -190,28 +200,10 @@ position:sticky;
 top:0;
 z-index:1000;
 }
-
-.nav-links{
-list-style:none;
-display:flex;
-gap:30px;
-}
-
-.nav-links a{
-text-decoration:none;
-color:white;
-font-weight:500;
-}
-
 .site-logo{
 height:45px;
 }
-.menu-toggle{
-display:none;
-font-size:28px;
-cursor:pointer;
-color:white;
-}
+
 </style>
 </head>
 
