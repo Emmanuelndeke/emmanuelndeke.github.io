@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Emmanuel Ndeke | GIS Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
@@ -46,12 +47,20 @@ text-align:center;
 padding:20px;
 background:#020617;
 }
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
   
 nav{
 background:rgba(6,20,35,0.85);
 padding:18px;
 position:sticky;
 top:0;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 nav ul{
@@ -220,7 +229,6 @@ I use geospatial tools to transform environmental data into maps and insights th
 
 </section>
   
-<footer>
 <footer class="site-footer">
 
 <div class="footer-content">
@@ -242,6 +250,14 @@ I use geospatial tools to transform environmental data into maps and insights th
 </div>
 
 </footer>
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navLinks");
+
+toggle.addEventListener("click", function(){
+nav.classList.toggle("show");
+});
+</script>
 
 </body>
 
