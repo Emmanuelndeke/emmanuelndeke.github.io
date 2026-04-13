@@ -3,6 +3,7 @@
 
 <head>
 <title>Projects | Emmanuel Ndeke</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 html{
@@ -15,10 +16,20 @@ margin:0;
 background:#0f172a;
 color:white;
 }
+.navbar{
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
 
 nav{
-background:#020617;
-padding:15px;
+background:rgba(6,20,35,0.85);
+padding:18px;
+position:sticky;
+top:0;
+display:flex;
+align-items:center;
+justify-content:space-between;
 }
 
 nav ul{
@@ -341,7 +352,6 @@ document.getElementById("mapModal").style.display = "none";
 }
 </script>
   
-<footer>
 <footer class="site-footer">
 
 <div class="footer-content">
@@ -363,6 +373,14 @@ document.getElementById("mapModal").style.display = "none";
 </div>
 
 </footer>
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navLinks");
+
+toggle.addEventListener("click", function(){
+nav.classList.toggle("show");
+});
+</script>
 
 </body>
 
