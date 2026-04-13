@@ -46,6 +46,31 @@ line-height:1.7;
 margin-top:20px;
 color:#ff6600;
 }
+.story-section{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+margin-bottom:60px;
+}
+
+.story-image img{
+width:100%;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.story-text{
+background:rgba(0,0,0,0.65);
+padding:30px;
+border-radius:10px;
+line-height:1.7;
+}
+
+.story-text h2{
+color:#ff6600;
+margin-bottom:10px;
+}
 </style>
 
 </head>
@@ -58,18 +83,25 @@ color:#ff6600;
 <h1>Rainfall analysis</h1>
 <p>Spatial analysis of Rainfall distribution using satellite imagery</p>
 </div>
-
-<div class="project-map">
-<img src="images/Rainfall Map.png" alt="Kenya Land Cover Map">
+  
+<section class="story-section">
+<div class="story-image">
+<img src="images/Rainfall Map.png" alt="Kenya land cover map">
 </div>
 
-<div class="project-content">
+<div class="story-text">
 
-<h2>Project Overview</h2>
+<h2>Land Cover Distribution</h2>
+
 <p>
-This project analyzes land cover distribution across Kenya using remote sensing
-classification techniques.
+The analysis identifies major land cover categories across Kenya including
+vegetation, built-up areas, and water bodies. Vegetation dominates western
+regions while arid landscapes cover much of northern Kenya.
 </p>
+
+</div>
+
+</section>
 
 <h2>Methodology</h2>
 <p>
