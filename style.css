@@ -130,7 +130,6 @@ max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
-/* INDIVIDUAL PROJECT PAGE LAYOUT */
 
 /* INDIVIDUAL PROJECT PAGE */
 
@@ -270,11 +269,13 @@ justify-content:center;
 }
 
 .contact-container{
-max-width:1000px;
+max-width:900px;
 width:100%;
 background:rgba(6,20,35,0.8);
-padding:40px;
+padding:30px;
 border-radius:10px;
+box-sizing:border-box;
+
 }
 
 .contact-container h1{
@@ -427,4 +428,13 @@ font-size:30px;
 .hero p{
 font-size:16px;
 }
+
+.contact-container{
+padding:20px;
 }
+
+.contact-grid{
+grid-template-columns:1fr;
+}
+}
+
