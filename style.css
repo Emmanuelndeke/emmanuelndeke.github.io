@@ -16,6 +16,25 @@ background:#0f172a;
 color:white;
 overflow-x:hidden;
 }
+/* ABOUT SECTION */
+
+.about{
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.about img{
+width:260px;
+border-radius:10px;
+}
+
+.about-text{
+max-width:600px;
+line-height:1.6;
+}
 /* HOMEPAGE BACKGROUND */
 
 .home-page{
