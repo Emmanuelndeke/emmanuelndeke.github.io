@@ -152,6 +152,26 @@ transition:0.3s;
 background:#ff8533;
 transform:scale(1.05);
 }
+/* PROJECT PAGE BACKGROUND */
+
+.projects-page{
+background-image:url("images/project-background.jpg");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+min-height:100vh;
+}
+
+.projects-page::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+z-index:-1;
+}
 
 /* TAGS */
 
