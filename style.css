@@ -126,6 +126,25 @@ max-width:1100px;
 margin:auto;
 padding:40px 20px;
 }
+/* INDIVIDUAL PROJECT PAGE LAYOUT */
+
+.project-detail{
+display:flex;
+align-items:flex-start;
+gap:40px;
+margin-top:40px;
+flex-wrap:wrap;
+}
+
+.project-detail img{
+width:420px;
+border-radius:10px;
+}
+
+.project-description{
+flex:1;
+line-height:1.6;
+}
 
 /* PROJECT GRID */
 
