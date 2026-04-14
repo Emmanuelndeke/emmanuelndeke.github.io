@@ -145,8 +145,8 @@ flex:1;
 }
 
 .project-map img{
-width:500px;
-max-width:100%;
+width:100%;
+max-width:600px;
 border-radius:10px;
 }
 
@@ -336,8 +336,14 @@ margin-bottom:10px;
 
 /* FOOTER */
 
+/* FOOTER */
+
 .site-footer{
 background:transparent;
+color:white;
+padding:40px 20px;
+margin-top:60px;
+}
 
 .footer-content{
 max-width:1000px;
@@ -364,7 +370,6 @@ margin-top:20px;
 font-size:13px;
 color:#bbb;
 }
-
 /* MOBILE RESPONSIVE */
 
 @media (max-width:768px){
@@ -401,10 +406,6 @@ max-width:100%;
 
 .contact-grid{
 grid-template-columns:1fr;
-}
-.about{
-flex-direction:column;
-text-align:center;
 }
 
 .about img{
