@@ -11,47 +11,40 @@
 </head>
 
 <body>
+<section class="project-detail">
 
-<section class="project-page">
-
-<div class="project-header">
-<h1>Lake Chad's Vegetation Health</h1>
-<p>Spatial analysis of NDVI using satellite imagery</p>
+<div class="project-map">
+<img src="images/NDVI map.jpg">
 </div>
 
-<section class="story-section">
-<div class="story-image">
-<img src="images/NDVI-map.jpg" alt="Kenya land cover map">
-</div>
+<div class="project-content">
 
-<div class="story-text">
-
-<h2>Vegetation Health Classification</h2>
+<h1>Vegetation Health Classification</h1>
 
 <p>
 This map tells an unexpected story. While Lake Chad is known for its long-term decline, my NDVI analysis reveals a different trend between 2017 and 2024.
 The 2024 data shows noticeable greening and a more consolidated water body compared to 2017. This doesn't solve the long-term crisis for the millions in Chad, Nigeria, Niger, and Cameroon who depend on it, but it highlights the lake's resilience and complexity.
 </p>
 
+<h3>Methodology</h3>
+
+<p>
+Supervised classification was performed using satellite imagery. Training
+samples were created for different land cover classes, and spatial analysis
+tools were used to generate the final classified map.
+</p>
+
+<h3>Tools Used</h3>
+
+<ul>
+<li>QGIS Software</li>
+<li>Landsat Band 4&3 and Band 5&4 collections from USGS Earth Explorer</li>
+</ul>
+
 </div>
 
 </section>
 
-<h2>Methodology</h2>
-<p>
-Satellite imagery was processed and classified to identify vegetation,
-water bodies, and built-up areas.
-</p>
-
-<h2>Tools Used</h2>
-<p>
-QGIS Software
-Landsat Band 4&3 and Band 5&4 collections from USGS Earth Explorer
-</p>
-
-</div>
-
-</section>
 <script src="script.js"></script>
 
 </body>
