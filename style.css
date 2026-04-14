@@ -55,6 +55,10 @@ height:100%;
 background:rgba(0,0,0,0.55);
 z-index:-1;
 }
+.home-page,
+.projects-page{
+background-color:transparent;
+}
 /* HERO SECTION (Homepage Intro) */
 
 .hero{
@@ -146,7 +150,7 @@ flex:1;
 
 .project-map img{
 width:100%;
-max-width:550px;
+max-width:600px;
 border-radius:10px;
 }
 
@@ -389,6 +393,13 @@ display:flex;
 
 .projects-grid{
 grid-template-columns:1fr;
+}
+.project-detail{
+flex-direction:column;
+}
+
+.project-map img{
+max-width:100%;
 }
 
 .contact-grid{
