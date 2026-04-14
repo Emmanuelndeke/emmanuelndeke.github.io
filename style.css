@@ -300,11 +300,7 @@ margin-bottom:10px;
 /* FOOTER */
 
 .site-footer{
-background:#111;
-color:white;
-padding:40px 20px;
-margin-top:60px;
-}
+background:transparent;
 
 .footer-content{
 max-width:1000px;
