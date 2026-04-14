@@ -18,15 +18,15 @@ overflow-x:hidden;
 }
 /* ABOUT SECTION */
 
-.about{
+.about-container{
 display:flex;
 align-items:center;
-gap:40px;
-flex-wrap:wrap;
-margin-top:40px;
+gap:50px;
+max-width:1000px;
+margin:auto;
 }
 
-.about img{
+.about-image img{
 width:260px;
 border-radius:10px;
 }
