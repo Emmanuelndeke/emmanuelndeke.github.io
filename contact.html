@@ -69,12 +69,21 @@ Feel free to reach out.
 
 </section>
 <script>
+
 const toggle = document.getElementById("menuToggle");
 const nav = document.getElementById("navLinks");
 
-toggle.addEventListener("click", function(){
+toggle.addEventListener("click", function(e){
+e.stopPropagation();
 nav.classList.toggle("show");
 });
+
+document.addEventListener("click", function(e){
+if(!nav.contains(e.target) && !toggle.contains(e.target)){
+nav.classList.remove("show");
+}
+});
+
 </script>
 
 </body>
