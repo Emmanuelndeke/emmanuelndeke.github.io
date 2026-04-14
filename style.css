@@ -128,22 +128,39 @@ padding:40px 20px;
 }
 /* INDIVIDUAL PROJECT PAGE LAYOUT */
 
+/* INDIVIDUAL PROJECT PAGE */
+
 .project-detail{
 display:flex;
+justify-content:center;
 align-items:flex-start;
-gap:40px;
-margin-top:40px;
-flex-wrap:wrap;
+gap:50px;
+max-width:1100px;
+margin:60px auto;
+padding:20px;
 }
 
-.project-detail img{
-width:420px;
+.project-map{
+flex:1;
+}
+
+.project-map img{
+width:100%;
+max-width:550px;
 border-radius:10px;
 }
 
-.project-description{
+.project-content{
 flex:1;
-line-height:1.6;
+line-height:1.7;
+}
+
+.project-content h1{
+margin-bottom:15px;
+}
+
+.project-content h3{
+margin-top:20px;
 }
 
 /* PROJECT GRID */
