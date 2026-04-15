@@ -27,8 +27,15 @@ This pattern highlights a well-known environmental phenomenon: urban areas tend 
 <h3>Methodology</h3>
 
 <p>
-The map compares vegetation cover and surface temperature across Nairobi County. Areas with higher vegetation density appear in green on the NDVI map and generally correspond with cooler surface temperatures. On the other hand, built-up areas with limited vegetation show lower NDVI values and higher land surface temperatures.
-This pattern highlights a well-known environmental phenomenon: urban areas tend to trap and retain more heat than vegetated areas. The analysis provides a simple but powerful visual reminder of the role that urban greenery plays in moderating temperatures in rapidly growing cities.
+Land Surface Temperature and vegetation patterns in Kenya were analyzed using satellite imagery 
+from the Landsat Program. The data were processed in QGIS to produce both the Normalized Difference 
+Vegetation Index (NDVI) and Land Surface Temperature (LST) maps. NDVI was calculated using Band 5 (near-infrared) and 
+Band 4 (red) to show the distribution and condition of vegetation across the study area. For the temperature analysis, 
+thermal Bands 10 and 11 were used to estimate land surface temperature. The RS&GIS plugin in QGIS was used to assist in processing the 
+thermal bands and generating the temperature outputs. After producing the NDVI and temperature layers, the two maps were compared 
+to examine the relationship between vegetation cover and surface temperature. The analysis showed that areas with higher vegetation 
+cover generally recorded lower temperatures, while areas with little vegetation or more built-up surfaces showed higher temperatures. 
+The final maps were arranged in a layout including important cartographic elements such as a title, legend, scale bar, and data source information.
 </p>
 
 <h3>Tools Used</h3>
