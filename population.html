@@ -31,9 +31,17 @@ The visualization highlights strong population concentration in major urban and 
 <h3>Methodology</h3>
 
 <p>
-Supervised classification was performed using satellite imagery. Training
-samples were created for different land cover classes, and spatial analysis
-tools were used to generate the final classified map.
+Population distribution for Kenya was mapped using the Global 
+Human Settlement Population Grid produced by the European Commission Joint Research Centre. 
+The population raster dataset was imported into QGIS and clipped to the national boundary of Kenya using a Kenya 
+administrative boundary shapefile to restrict the analysis to the study area. 
+The raster values represent the estimated number of people per 100-metre grid cell. 
+After clipping the dataset, NoData values were standardized to improve visualization and ensure 
+that only valid population cells were displayed. The raster layer was then symbolized using a Singleband 
+Pseudocolor renderer with a graduated color ramp ranging from black to white to highlight variations in population density. 
+Areas with low population appear darker while densely populated regions appear brighter, allowing spatial patterns of settlement 
+distribution across Kenya to be clearly visualized. The final map layout was composed with essential cartographic elements 
+including a title, legend, scale bar, data source attribution, and map credits.
 </p>
 
 <h3>Tools Used</h3>
