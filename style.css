@@ -142,8 +142,8 @@ align-items:flex-start;
 
 .project-map{
 flex:1;
-overflow:hidden;
-border-radius:10px;
+position:relative;
+overflow:visible;
 }
 
 .project-map img{
